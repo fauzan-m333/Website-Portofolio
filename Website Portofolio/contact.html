@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Fauzan Mubarak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Fauzan Mubarak</h2>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Form Konsultasi Teknologi</h2>
+    <form>
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama" placeholder="Masukkan nama anda" required>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Masukkan email anda" required>
+
+      <label>Topik Konsultasi</label>
+      <select name="topik">
+        <option value="web">Pengembangan Website</option>
+        <option value="security">Keamanan Data</option>
+        <option value="game">Game Development</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label>Pesan / Deskripsi Proyek</label>
+      <textarea name="pesan" rows="5" placeholder="Tuliskan detail pesan atau proyek..."></textarea>
+
+      <label>
+        <input type="checkbox" required> Saya menyetujui kebijakan privasi
+      </label>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Fauzan Mubarak | <a href="https://itpln.ac.id" target="_blank">Institut Teknologi PLN</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header dan Navigasi */
+header {
+  background: #1e293b;
+  padding: 15px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background: #e2e8f0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero span {
+  color: #2563eb;
+}
+
+/* About */
+.about, .skills, .portfolio, .contact {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-bar p {
+  text-align: left;
+}
+
+.progress {
+  background: #cbd5e1;
+  border-radius: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  background: #2563eb;
+  height: 100%;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #94a3b8;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 5px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    margin: 0 0 20px 0;
+  }
+}
